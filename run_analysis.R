@@ -13,7 +13,7 @@ if (!require("data.table")) {
 if (!require("reshape2")) {
   install.packages("reshape2")
 }
-# validate packages are installed
+# validate packages are installed (if validation returns False package may need to be installed from CRAN Repository)
 packages <- c("data.table", "reshape2")
 sapply(packages, require, character.only = TRUE, quietly = TRUE)
 
